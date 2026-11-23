@@ -1,0 +1,19 @@
+{
+  "name": "limbo-post-desk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LIMBO Post Desk: the team uploads photos and captions, Cassey approves, and approved posts go to Facebook, Instagram, Threads and X.",
+  "type": "commonjs",
+  "main": "src/server.js",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "check": "node --disable-warning=ExperimentalWarning src/check.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "sharp": "^0.35.5"
+  }
+}
